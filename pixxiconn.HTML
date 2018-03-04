@@ -1,0 +1,656 @@
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h1{
+  	font-size: 50px;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color:#062F4F;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+
+  	.bg-grey{
+  		background-color: #f6f6f6;
+  	}
+  
+  	
+  	.jai {
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+    }
+    	.thumbnail{padding:0 0 15px 0;
+    		border:none;
+    		border-radius: 0;
+
+    	}
+    	.thumbnail{
+    		width: 100%;
+    		height: 100%;
+    		margin:10px;
+    	}
+ 
+.item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;}
+      .panel {
+      border: 1px solid #062F4F; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px #062F4F;
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #062F4F;
+      
+      background-color: #fff !important;
+      color: #062F4F;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color:#062F4F !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #062F4F;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #062F4F;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  .btnb{
+  	color:white;
+  	margin-bottom: 3px;
+  	margin: 4px;
+  }
+  #contact{
+  	background-color:#1A2930;
+  	color:white; 
+  }
+  #quality{
+  	color:black;
+  }
+
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.parallax {
+   
+    background-image: url("technical11.jpg");
+
+       min-height: 500px; 
+
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+  .header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  
+  color: white;
+}
+.fa-google {
+
+  color: white;
+}.fa-linkedin {
+ 
+  color: white;
+}.fa-instagram {
+  
+  color: white;
+}
+
+
+  </style>
+
+
+<div class="jumbotron text-center">
+	<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#about1">About</a>
+  <a href="#gallery">Slideshow</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer;float:left" onclick="openNav()">&#9776;Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+  <h1 class="text-center">PIXXICON</h1> 
+  <p>“You must unlearn what you have learned!”</p>
+  <div class="container" id=btnt>
+  <button type="button" class="btn btn-primary"><a class="fa fa-facebook text-center" href="https://www.facebook.com/FocProject007-127610154583072/?ref=bookmarks" target="_blank"
+></a></button>
+  <button type="button" class="btn btn-success"><a class="fa fa-google text-center"" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"></a></button>
+  <button type="button" class="btn btn-warning"><a class="fa fa-instagram" href="https://www.instagram.com/devilscode007/" target="_blank"></a></button>
+  <button type="button" class="btn btn-danger"><a class="fa fa-linkedin" href="https://www.linkedin.com/in/akash-gangwar-9371141141" target="_blank"></a></button>
+       
+</div>
+
+
+  <form>
+    <div class="input-group">
+      <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-danger">Subscribe</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div class="container-fluid" id="about1">
+  <div class="row">
+  	<div class="col-sm-8">
+  	<h2>about pixxicon</h2>
+<p>largely thanks to the developments in digital photography. Cameras and computers have become cheaper and more powerful.
+Along with these developments in photography has been the parallel development of the Web. Today, contemporary photographers have powerful tools such as WordPress and DreamWeaver with which to develop their websites. Photographers can also sell their work through companies such as PhotoShelter or ImageKind.
+The result is that photographers are finding new and exciting ways to showcase their best work online. I took a look at some of the beautiful photography websites that we could find, analyzing the design trends and the reasons why these websites work.</p>
+<button class="btn btn-lg btn-default">get in touch</button>  
+</div>
+
+<div class="col-sm-4">
+	
+	<img src="photos.jpg">
+	 
+</div>
+</div>
+</div>
+<div class="parallax"></div>
+
+<div style="height:400px;background-color:#0F1626;font-size:25px;color:white;" class="text-center">
+	<h1><strong>Chase jarvis</strong></h1>
+	<p>It’s the first time in the history of the world that creatives are also distributors. And that’s very profound if you think that up until the recent history, permission was required for us to be able to share work at any sort of scale. We had to get permission from galleries, from ad agencies or photo editors to be able to have our work out there. And now anybody with access to a computer can show their work in 200 countries around the world.”</p>
+</div>
+
+<div class="container-fluid text-center" id="quality">
+	<h2>Quality promise</h2>
+	<br>
+	<div class="row">
+		<div class="col-sm-4">
+		<i class="fa fa-pagelines" style="font-size:48px;color:red"></i>
+			<h5>museum quality</h5>
+			<p>My partner Aditya gaurav uses processes that meet the highest demands of artists and photographers. Thanks to a professional colour management system, we ensure intense and long-lasting colours. The colour accuracy and brilliance of our brand-name photo papers have a certified lifespan of 10 years.</p>
+		</div>
+		<div class="col-sm-4">
+		<i class="fa fa-angellist" style="font-size:48px;color:red"></i>
+			<h5>Certified material</h5>
+			<p>
+We exclusively use high-quality material from trusted suppliers "Amish kumar patel and sons" to ensure the quality, brilliance and durability of your prints.</p>
+		</div>
+		<div class="col-sm-4">
+			<i class="fa fa-joomla" style="font-size:48px;color:red"></i>
+			<h5>State of the art production methods</h5>
+			<p>
+We use highly developed lab technology to guarantee maximum precision and resolution so that your piece of art looks immaculate and brilliant.</p>
+		</div>
+	</div>
+	<br>
+	<br>
+<div Class="row">
+		<div class="col-sm-4">
+			<i class="fa fa-get-pocket" style="font-size:48px;color:red"></i>
+			<h5>Constant quality controls</h5>
+			<p>
+In-depth quality checks after each production step ensure that we fulfill our quality promise.</p>
+		</div>
+		<div class="col-sm-4">
+			<i class="fa fa-bar-chart" style="font-size:48px;color:red"></i>
+			<h5>Long durability</h5>
+			<p>	The use of premium ink and colours as well as approved photographic methods ensure that your print will last up to 100 years – a promish by sunny pratap!</p>
+		</div>
+		<div class="col-sm-4">
+			<i class="fa fa-dropbox" style="font-size:48px;color:red"></i>
+		<h5>Precise handicraft</h5>
+		<p>
+While almost all production steps are being supervised by photo-professionals like "akshay maurya", some steps are still being handmade in a traditional manner.</p>
+	</div>
+	</div>
+</div>
+<div id="portfolio" class="container-fluid text-center bg-grey">
+
+  <h2>Portfolio</h2><br>
+  <h4>What we have created</h4>
+  <div class="row text-center slideanim">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="akash3.jpg" alt="Paris" width="400" height="300">
+        <p>The photographer</p>
+        <p><strong>AKASH GANGWAR</strong></p>
+        <p>What fascinates me most are the infinite shapes nature is able to assume. His view turns a piece of soil, a detail of an animal or a single line of a landscape into a unique aesthetic unit but always without disturbing the essence of nature</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="pic9.jpg" alt="New York" width="400" height="300">
+        <p>Philoshpy</p>
+        <p><strong>SERVICE</strong></p>
+        <p>In everything I do, I strive for perfect workmanship, columnour brilliance and durability to ensure that my art print delights you for a lifetime.</p></div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="pic7.jpg" alt="San Francisco" width="400" height="300">
+      <P>My promise</P> 
+       <p><strong>QUALITY</strong></p>
+        <p>. Our photo lab partner Sander stands for highest quality in print productiON.My philosophy is to always reach the best quality possible which has been the guiding principle until today.i can provide a variety of products in museum quality.</p>
+      </div>
+    </div>
+  </div><br>
+<div id="pricing" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Basic</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>20</strong> Frame</p>
+          <p><strong>15</strong>Photo</p>
+          <p><strong>5</strong> Dolor</p>
+          <p><strong>2</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$19</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Pro</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>50</strong> Frame</p>
+          <p><strong>25</strong> Photo</p>
+          <p><strong>10</strong> Dolor</p>
+          <p><strong>5</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$29</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>Premium</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>100</strong> Frame</p>
+          <p><strong>50</strong>Photo</p>
+          <p><strong>25</strong> Dolor</p>
+          <p><strong>10</strong> Sit</p>
+          <p><strong>Endless</strong> Amet</p>
+        </div>
+        <div class="panel-footer">
+          <h3>$49</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Sign Up</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Aizawl,INDIA</p>
+      <p><span class="glyphicon glyphicon-phone"></span>8449925580</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> itsshivansh39@gmail.com</p>
+    </div>
+    <div class="container-fluid">
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="googleMap" style="height:400px;width:100%;"></div>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+</footer>
+
+<script>
+$(document).ready(function(){
+  
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+   
+    if (this.hash !== "") {
+     
+      event.preventDefault();
+
+    
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+             window.location.hash = hash;
+      });
+    } 
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+	</body>
+
+
+
